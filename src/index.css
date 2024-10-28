@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #aaa;
+}
+
+.green {
+  @apply bg-green-500;
+}
+
+.yellow {
+  @apply bg-yellow-500;
+}
+
+.red {
+  @apply bg-red-500;
+}
+
+.blue {
+  @apply bg-blue-500;
+}
+
+.pieces {
+  display: flex;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.shape-1 .bg-yellow-500,
+.shape-2 .bg-yellow-500,
+.shape-3 .bg-yellow-500,
+.shape-4 .bg-yellow-500,
+.shape-5 .bg-yellow-500,
+.shape-1 .bg-red-500,
+.shape-2 .bg-red-500,
+.shape-3 .bg-red-500,
+.shape-4 .bg-red-500,
+.shape-5 .bg-red-500,
+.shape-1 .bg-green-500,
+.shape-2 .bg-green-500,
+.shape-3 .bg-green-500,
+.shape-4 .bg-green-500,
+.shape-5 .bg-green-500,
+.shape-1 .bg-blue-500,
+.shape-2 .bg-blue-500,
+.shape-3 .bg-blue-500,
+.shape-4 .bg-blue-500,
+.shape-5 .bg-blue-500 {
+  border: solid 1px black;
+}
+
+.shape-1 {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 2rem;
+  grid-template-rows: 2rem;
+}
+
+.shape-2 {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 2rem 2rem;
+  grid-template-rows: 2rem 2rem;
+}
+
+.shape-3 {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 2rem 2rem 2rem;
+  grid-template-rows: 2rem 2rem 2rem;
+}
+
+.shape-4 {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 2rem 2rem 2rem 2rem;
+  grid-template-rows: 2rem 2rem 2rem 2rem;
+}
+
+.shape-5 {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 2rem 2rem 2rem 2rem 2rem;
+  grid-template-rows: 2rem 2rem 2rem 2rem 2rem;
+}
